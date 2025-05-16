@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'poppins';
+    scroll-behavior: smooth;
+}
+
+.logo-pestana{
+    border-radius: 50%;
+}
+
+.header{
+background-color: rgb(255 0 255);;
+padding: 10px;
+}
+
+@media(min-width:430px){.header
+    {background-color: rgb(255 0 255);;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    top:0
+    }}
+
+.seccion-presentacion{
+    display: relative;
+}
+
+.presentacion-tittle{
+    padding-bottom: 5px;
+    display:flex;
+}
+
+@media (max-width: 250px) {
+    .presentacion-tittle{
+        font-size: 18px;
+        text-align: center;
+}}
+
+.presentacion-telefono{
+    color: white;
+    text-align: right;
+}
+
+.seccion-navegacion{
+    display: flex;
+    justify-content: flex-end;
+    padding:3px;
+    max-width: 100%;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.section-navegacion{
+    float: right;
+
+}
+
+.navegacion{
+display: flex;
+width: 100%;
+justify-content: space-between;
+padding: 3px;
+max-width: 100%;
+
+}
+
+.items-nav a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+.items-nav:hover{
+box-shadow: 3px 3px 10px 0 white;
+transition: 1s;
+transform: translateY(-5px);
+transition: transform 0.4s;
+}
+
+@media (max-width: 446px) {
+    .items-nav-container{
+    flex-direction: column; /* Cambia de fila a columna */
+    align-items: center;
+}}
+
+@media (max-width: 446px) {
+    .seccion-navegacion{
+     /* Cambia de fila a columna */
+    display: flex;
+    justify-content: center;
+}}
+
+.items-nav-container{
+    list-style: none;
+    display: flex;
+    padding: 3px;
+}
+
+.container-tittle-testimonios{
+
+    text-align: center;
+    margin-top: 200px;
+    font-size: 30px;
+}
+
+@media(max-width: 428px){
+    .container-tittle-testimonios
+    {
+        margin-top: 0;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .container-tittle-testimonios{
+        font-size: 20px;
+}}
+.container-tittle-testimonios span{
+    color: rgb(255 0 255);
+}
+
+.testimonios-container{
+    max-width: 100%;
+    display:flex;
+}
+
+.testimonios{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.testimonios-container-items span{
+    color: rgb(255 0 255);
+    font-weight: bold;
+}
+
+.container-testimonios-items{
+display: flex;
+margin-top: 30px;
+}
+
+.testimonios-container-items{
+    margin-top: 10px;
+    width: 40%;
+    height: 100%;
+    padding: 10px;
+    display:flex;
+    margin:5px;
+    border:1px solid rgb(255 0 255);
+    justify-content: center;
+}
+
+@media (max-width: 550px) {
+    .container-testimonios-items{
+    display:inline-block;
+    width: 100%;
+    text-align: center;
+}}
+
+@media (max-width: 550px) {
+    .testimonios-container-items{
+    width: 80%;
+    height: auto;  
+    margin: 0 auto;
+    margin-bottom: 20px;
+}}
+
+.footer-container{
+    background-color: rgb(238, 0, 255);
+    margin-top:30px;
+}
+
+.redes-sociales{
+    padding: 10px;
+    margin:15px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.items-redes-sociales{
+    width: 30px;
+    height: 30px;
+    display: flex;
+}
+
+.items-redes-sociales:hover{
+    transition: all 1s;
+    width: 32px;
+    height: 32px;
+}
+
+.piedepagina{
+    text-align: center;
+}
+
+.button-whatsapp-container{
+    height: 20px;
+    width: 20px;
+}
+
+.button-whatsapp{
+    height:80px;
+    width: 80px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    z-index: 20;
+}
+
+.button-whatsapp:hover{
+    transition: all 2s;
+    height: 85px;
+    width: 85px;
+}
+
+.imagenes-testimonios-container{
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    height: auto;
+}
+
+.imagenes-testimonios__{
+    display: block;
+    margin: 0 auto;
+}
+
+.instagram-media{
+    display:block;
+    margin: 10px;
+    width: 10%!important;
+}
+
+.tittle-testimonios-imagenes span{
+    color: rgb(255 0 255);
+}
+
+.tittle-testimonios-imagenes{
+    text-align: center;
+    font-size: 40px;
+}

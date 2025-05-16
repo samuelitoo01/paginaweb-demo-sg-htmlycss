@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'poppins';
+    scroll-behavior: smooth;
+}
+
+.logo-pestana{
+    border-radius: 50%;
+}
+
+.header{
+background-color: rgb(255 0 255);;
+padding: 10px;
+}
+
+.seccion-presentacion{
+    display: relative;
+}
+
+.presentacion-tittle{
+    padding-bottom: 5px;
+    display:flex;
+}
+
+@media (max-width: 250px) {
+    .presentacion-tittle{
+        font-size: 18px;
+        text-align: center;
+}}
+
+.presentacion-telefono{
+    color: white;
+    text-align: right;
+}
+
+.seccion-navegacion{
+    display: flex;
+    justify-content: flex-end;
+    padding:3px;
+    max-width: 100%;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.section-navegacion{
+    float: right;
+
+}
+
+.navegacion{
+display: flex;
+width: 100%;
+justify-content: space-between;
+padding: 3px;
+max-width: 100%;
+
+}
+
+.items-nav a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+.items-nav:hover{
+box-shadow: 3px 3px 10px 0 white;
+transition: 1s;
+transform: translateY(-5px);
+transition: transform 0.4s;
+}
+
+@media (max-width: 446px) {
+    .items-nav-container{
+    flex-direction: column; /* Cambia de fila a columna */
+    align-items: center;
+}}
+
+@media (max-width: 446px) {
+    .seccion-navegacion{
+     /* Cambia de fila a columna */
+    display: flex;
+    justify-content: center;
+}}
+
+.items-nav-container{
+    list-style: none;
+    display: flex;
+    padding: 3px;
+}
+
+.tittle-map{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.tittle-map span{
+    color: rgb(255 0 255);
+}
+
+.seccion-mapa{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.map--google{
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.button-whatsapp-container{
+    height: 20px;
+    width: 20px;
+}
+
+.button-whatsapp{
+    height:80px;
+    width: 80px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+}
+
+.button-whatsapp:hover{
+    transition: all 2s;
+    height: 85px;
+    width: 85px;
+}

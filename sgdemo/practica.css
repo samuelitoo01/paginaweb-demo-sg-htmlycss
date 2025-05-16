@@ -1,0 +1,328 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'poppins';
+    scroll-behavior: smooth;
+}
+
+.logo-pestana{
+    border-radius: 50%;
+}
+
+.header{
+    background-color: rgb(255 0 255);
+    position:relative;
+}
+/*nav bar quieto position fixed*/
+@media(min-width:430px){.header
+{background-color: rgb(255 0 255);;
+padding: 10px;
+position: fixed;
+width: 100%;
+z-index: 20;
+}}
+
+.seccion-presentacion{
+    display: relative;
+}
+
+.seccion-presentacion img{
+    height: 20px;
+    width: 20px;
+}
+
+.presentacion-tittle{
+    padding-bottom: 5px;
+    display:flex;
+}
+
+@media (max-width: 250px) {
+    .presentacion-tittle{
+        font-size: 18px;
+        text-align: center;
+}}
+
+.presentacion-telefono{
+    color: white;
+    text-align: right;
+}
+
+.seccion-navegacion{
+    display: flex;
+    justify-content: flex-end;
+    padding:3px;
+    max-width: 100%;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.section-navegacion{
+    float: right;
+
+}
+
+.navegacion{
+display: flex;
+width: 100%;
+justify-content: space-between;
+padding: 3px;
+max-width: 100%;
+
+}
+
+.items-nav a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+.items-nav:hover{
+box-shadow: 3px 3px 10px 0 white;
+transition: 1s;
+transform: translateY(-5px);
+transition: transform 0.4s;
+}
+
+@media (max-width: 446px) {
+    .items-nav-container{
+    flex-direction: column; /* Cambia de fila a columna */
+    align-items: center;
+}}
+
+@media (max-width: 446px) {
+    .seccion-navegacion{
+     /* Cambia de fila a columna */
+    display: flex;
+    justify-content: center;
+}}
+
+.items-nav-container{
+    list-style: none;
+    display: flex;
+    padding: 3px;
+}
+
+.imagenes-top{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+}
+
+.container-imagenes{
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    display: flex;
+    position: relative;
+    margin-top: 150px;
+}
+
+.container-imagenes-frase{
+    text-align: center;
+    margin:0 auto;
+}
+
+.container-imagenes:hover{
+filter: brightness(0.7);
+}
+
+.img--pestanas{
+    max-width: 100%;
+    height: auto;
+}
+
+.container-imagenes-frase{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: bold;
+    opacity: 0;
+}
+
+.button-contacto
+{
+    position:absolute;
+    height: 55px;
+    width:100px ;
+    top: 70%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    background-color: aliceblue;
+}
+
+.button-contacto:hover{
+    opacity: 1;
+    z-index: 50;
+    background-color: blueviolet;
+    transition: all 2s;
+}
+
+.container-imagenes-frase:hover{
+    opacity: 1;
+}
+
+
+.servicios-seccion{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.nuestros-servicios{
+    padding: 5px;
+    font-size: 40px;
+    display: relative;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.nuestros-servicios:hover{
+    transform: translateY(-10px);
+    transition: transform 0.3s;
+}
+
+.servicios-items:hover{
+    transform: translateY(-5px);
+    transition: transform 0.4s;
+}
+
+.mision-vision{
+    max-width: 100%;
+    height: auto;
+    padding: 30px;
+}
+
+.tittle-mision{
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+.mision{
+width: 80%;
+height: auto;
+}
+
+.vision{
+    width: 100%;
+    height: auto;
+    display: block;
+    text-align: right;
+}
+
+.contenido-parrafo-vision{
+    text-align: right;
+    margin-left: 200px;
+}
+
+/*media*/
+@media (max-width: 522px) {
+    .contenido-parrafo-vision{ /* Cambia de fila a columna */
+    align-items: center;
+    margin-left: 0;
+}}
+
+.mision span{
+color: rgb(255, 0, 255);
+font-weight: bold;
+}
+
+.tittle-vision{
+    font-size: 50px;
+}
+
+.vision span{
+    color: rgb(255, 0, 255);
+    font-weight: bold;
+}
+
+.ventajas-local-clase{
+display: flex;
+flex-direction: column;
+}
+
+.lista-ventajas-local{
+display: inline-block;
+flex-direction: center;
+margin: 20px;
+font-size: 20px;
+width: 180px;
+height: 180px;
+}
+
+.img-ventajas{
+    display: block;
+}
+
+.lista-ventajas-local img{
+    height: 80px;
+    width: 80px;
+}
+
+@media (max-width: 522px) {
+    .ventajas-local-clase{ 
+    display: flex;
+    flex-direction: column; 
+    margin: 0 auto;
+    text-align: center;
+ /* Cambia de fila a columna */
+}}
+
+@media (max-width: 522px) {
+    .img-ventajas{
+    margin: 0 auto;
+}}
+
+.button-whatsapp-container{
+    height: 20px;
+    width: 20px;
+}
+
+.button-whatsapp{
+    height:80px;
+    width: 80px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+}
+
+.button-whatsapp:hover{
+    transition: all 2s;
+    height: 85px;
+    width: 85px;
+}
+
+.footer-container{
+    background-color: rgb(238, 0, 255);
+}
+
+.redes-sociales{
+    padding: 10px;
+    margin:15px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.items-redes-sociales{
+    width: 30px;
+    height: 30px;
+    display: flex;
+}
+
+.items-redes-sociales:hover{
+    transition: all 1s;
+    width: 32px;
+    height: 32px;
+}
+
+.piedepagina{
+    text-align: center;
+}
